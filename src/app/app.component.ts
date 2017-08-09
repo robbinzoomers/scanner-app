@@ -52,7 +52,7 @@ export class MyApp {
   ];
   filterPages: PageInterface[] = [
     { title: 'Straal', name: 'RadiusOverviewPage', component: RadiusOverviewPage, icon: 'locate' },
-    { title: 'Plaats', name: 'AreaOverviewPage', component: AreaOverviewPage, icon: '_remove_home' },
+    { title: 'Plaats', name: 'AreaOverviewPage', component: AreaOverviewPage, icon: 'home' },
     { title: 'Regio', name: 'RegionPage', component: RegionOverviewPage, icon: 'map' },
     { title: 'Capcode', name: 'CapcodeOverviewPage', component: CapcodeOverviewPage, icon: 'code-working' }
   ];
