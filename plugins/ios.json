@@ -1,0 +1,59 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-geolocation": {
+            "GEOLOCATION_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_IOS": "AIzaSyATvmt2hHriXHDR059yYbSXbizbitPZgIA",
+            "LOCATION_WHEN_IN_USE_DESCRIPTION": "Show your location on the map",
+            "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Trace your location on the map",
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-3dtouch": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        }
+    },
+    "dependent_plugins": {
+        "com.googlemaps.ios": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.enited.scanner"
+        }
+    }
+}

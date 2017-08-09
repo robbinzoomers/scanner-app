@@ -1,0 +1,51 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Wachtwoord vergeten?</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <p>Voer het e-mailadres in waarmee je je account hebt aangemaakt.</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4><hr /></ion-col>
+      <ion-col col-4 text-center>Scanner</ion-col>
+      <ion-col col-4><hr /></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+
+        <!-- form -->
+          <form [formGroup]="forgotForm" (submit)="onSignin()">
+            <ion-list no-lines>
+              <ion-item>
+                <ion-label floating>E-mailadres</ion-label>
+                <ion-input type="email" name="email" formControlName="username"></ion-input>
+              </ion-item>
+            </ion-list>
+            <button ion-button block clear type="submit">Reset</button>
+          </form>
+        <!-- end form -->
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><hr /></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,190 @@
+{
+
+  "feeds": [
+    {
+      "date": "2017-06-30",
+      "messages": [
+        {
+          "title": "P1 Buitensluiting (VK: 5) Laan van Wateringse Veld 1290 DHG 157750",
+          "address": "Laan van Wateringse Veld 1290",
+          "city": "Den Haag",
+          "datetime": "2017-06-30T11:37:59+02:00",
+          "disciplineId": 1,
+          "discipline": "brandweer",
+          "latitude": 52.02209,
+          "longitude": 4.29567,
+          "capcodes": [1500150, 1503902]
+        },
+        {
+          "title": "B2 Loosduinse Uitleg 160 DHG 2553AV : 15430 Ritnr: 103543",
+          "address": "Loosduinse Uitleg 160",
+          "city": "Den Haag",
+          "datetime": "2017-06-30T11:37:58+02:00",
+          "disciplineId": 2,
+          "discipline": "ambulance",
+          "latitude": 52.05192,
+          "longitude": 4.23331,
+          "capcodes": [1520430]
+        },
+        {
+          "title": "A2 Huisartsenpost Rokkeveen Groen-blauwlaan 145 ZTR 2718GH : 15141 Ritnr: 103542",
+          "address": "Groen-blauwlaan 145",
+          "city": "Zoetermeer",
+          "datetime": "2017-06-30T11:32:00+02:00",
+          "disciplineId": 2,
+          "discipline": "ambulance",
+          "latitude": 52.03836,
+          "longitude": 4.49305,
+          "capcodes": [1520041]
+        },
+        {
+          "title": "A2 Segbroeklaan 366 DHG 2565DX Directe inzet 15103 Ritnr: 103540",
+          "address": "Segbroeklaan 366",
+          "city": "Den Haag",
+          "datetime": "2017-06-30T11:28:00+02:00",
+          "disciplineId": 2,
+          "discipline": "ambulance",
+          "latitude": 52.08122,
+          "longitude": 4.26814,
+          "capcodes": [1520003]
+        }
+      ]
+    }, {
+      "date": "2017-06-29",
+      "messages": [{
+        "title": "A2 DP2 Leidschendam - Voorburg Via Donizetti 1 VBG 2272VK VWS 15147 Ritnr: 103539",
+        "address": "Via Donizetti 1",
+        "city": "Voorburg",
+        "datetime": "2017-06-29T11:25:00+02:00",
+        "disciplineId": 2,
+        "discipline": "ambulance",
+        "latitude": 52.08808,
+        "longitude": 4.37637,
+        "capcodes": [1520047]
+      }, {
+        "title": "A1 De Zandmotor Strandopgang Schelpenpad MSR: (Pat. vervoer, Lifeguards)",
+        "address": "Schelpenpad",
+        "city": "Monster",
+        "datetime": "2017-06-29T11:22:00+02:00",
+        "disciplineId": 4,
+        "discipline": "knrm",
+        "latitude": 52.0412449,
+        "longitude": 4.1874619,
+        "capcodes": [1500977, 1500996, 1500997]
+      }, {
+        "title": "P1 Ongeval wegvervoer letsel th Hoefkade 745 DHG 159661",
+        "address": "Hoefkade 745",
+        "city": "Den Haag",
+        "datetime": "2017-06-29T11:21:00+02:00",
+        "disciplineId": 1,
+        "discipline": "brandweer",
+        "latitude": 52.06337,
+        "longitude": 4.30239,
+        "capcodes": [1503902, 1500198]
+      }, {
+        "title": "A2 Tulpentuin 46 VBG 2272XK : 15119 Ritnr: 103502",
+        "address": "Tulpentuin 46",
+        "city": "Voorburg",
+        "datetime": "2017-06-29T11:19:00+02:00",
+        "disciplineId": 2,
+        "discipline": "ambulance",
+        "latitude": 52.08226,
+        "longitude": 4.37374,
+        "capcodes": [1520019]
+      }, {
+        "title": "A2 Post Zoetermeer / Blauw-roodlaan 290 ZTR 2718SK VWS 15381 Ritnr: 103492",
+        "address": "Blauw-roodlaan 290",
+        "city": "Zoetermeer",
+        "datetime": "2017-06-29T11:16:00+02:00",
+        "disciplineId": 2,
+        "discipline": "ambulance",
+        "latitude": 52.03487,
+        "longitude": 4.49428,
+        "capcodes": [1520081]
+      }, {
+        "title": "A2 Reddingsbrigade DHG post 2 th Deltaplein DHG : (Pat. vervoer, Lifeguards) 15130 Ritnr: 103497",
+        "address": "Deltaplein",
+        "city": "Den Haag",
+        "datetime": "2017-06-29T11:15:00+02:00",
+        "disciplineId": 2,
+        "discipline": "ambulance",
+        "latitude": 52.0671516,
+        "longitude": 4.2191213,
+        "capcodes": [1520030]
+      }, {
+        "title": "B1 Bron. CCU (1e/R18) / Bronovolaan 5 DHG 2597AX : 15103 Ritnr: 103498",
+        "address": "Bronovolaan 5",
+        "city": "Den Haag",
+        "datetime": "2017-06-29T11:13:00+02:00",
+        "disciplineId": 2,
+        "discipline": "ambulance",
+        "latitude": 52.10165,
+        "longitude": 4.318,
+        "capcodes": [1520003]
+      }, {
+        "title": "A2 Reddingsbrigade DHG post 2 th Deltaplein DHG : (Pat. vervoer, Lifeguards)",
+        "address": "Deltaplein, Noord",
+        "city": "Den Haag",
+        "datetime": "2017-06-29T11:11:00+02:00",
+        "disciplineId": 4,
+        "discipline": "knrm",
+        "latitude": 52.0671516,
+        "longitude": 4.2191213,
+        "capcodes": [1500971, 1500972, 1500995]
+      }, {
+        "title": "P1 Stank (VK: 1) (Soort lucht: aardgas) Teunisbloemplein 18 c DHG 157730",
+        "address": "Teunisbloemplein 18",
+        "city": "Den Haag",
+        "datetime": "2017-06-29T11:09:00+02:00",
+        "disciplineId": 1,
+        "discipline": "brandweer",
+        "latitude": 52.06297,
+        "longitude": 4.22678,
+        "capcodes": [1500150, 1503902]
+      }, {
+        "title": "A1 Alphons Diepenbrockhof 164 DHG 2551LD : 15119 Ritnr: 103548",
+        "address": "Alphons Diepenbrockhof 164",
+        "city": "Den Haage",
+        "datetime": "2017-06-29T11:08:00+02:00",
+        "disciplineId": 2,
+        "discipline": "ambulance",
+        "latitude": 52.05934,
+        "longitude": 4.23144,
+        "capcodes": [1520019]
+      }]
+  }],
+
+  "regions": [
+    {"title": "Amsterdam-Amstelland", "disciplines": [1, 2, 3]},
+    {"title": "Brabant Noord", "disciplines": [1, 2, 3]},
+    {"title": "Brabant Zuid-Oost", "disciplines": [1, 2, 3]},
+    {"title": "Drente", "disciplines": [1]},
+    {"title": "Flevoland", "disciplines": [1, 2, 3]},
+    {"title": "Friesland", "disciplines": [1, 2]},
+    {"title": "Gelderland Midden", "disciplines": [1, 2, 3]},
+    {"title": "Gelderland Zuid", "disciplines": [1, 2, 3]},
+    {"title": "Gooi en Vechtstreek", "disciplines": [1, 2, 3]},
+    {"title": "Groningen", "disciplines": [1]},
+    {"title": "Haaglanden", "disciplines": [1, 2, 3]},
+    {"title": "Hollands Midden", "disciplines": [1, 2, 3]},
+    {"title": "IJsselland", "disciplines": [1, 2, 3]},
+    {"title": "kennemerland", "disciplines": [1, 2, 3]},
+    {"title": "limburg Noord", "disciplines": [1, 2, 3]},
+    {"title": "limburg Zuid", "disciplines": [1, 2, 3]},
+    {"title": "Midden- en West-Brabant", "disciplines": [1, 2, 3]},
+    {"title": "Noord- en Oost-Gelderland", "disciplines": [1, 2, 3]},
+    {"title": "Noord-Holland Noord", "disciplines": [1, 2, 3]},
+    {"title": "Rotterdam-Rijnmond", "disciplines": [1, 2, 3]},
+    {"title": "Twente", "disciplines": [1, 3]},
+    {"title": "Utrecht", "disciplines": [1, 2, 3]},
+    {"title": "Zaanstreek-Waterland", "disciplines": [1, 3]},
+    {"title": "Zeeland", "disciplines": [1, 2]},
+    {"title": "Zuid-Holland Zuid", "disciplines": [1, 2, 3]}
+  ],
+
+
+  "areaSettings": {
+    "title": "area settings"
+  }
+
+}

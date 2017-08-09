@@ -1,0 +1,48 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="regionAddPage">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Region filters</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding-top>
+
+  <ion-list no-lines padding-top *ngIf="regions.length > 0">
+    <ion-item>
+      <ion-label> Gebruik deze filters</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines *ngIf="regions.length > 0">
+    <ion-item-divider>Ingestelde regions</ion-item-divider>
+    <ion-item *ngFor="let region of regions">
+      <ion-icon name="remove-circle-outline" color="danger" item-start></ion-icon>
+      <h2>{{region.title}}</h2>
+      <ion-icon *ngIf="region.disciplines.indexOf(2)" name="remove-circle-outline" color="secondary" small item-end></ion-icon>
+      <ion-icon *ngIf="region.disciplines.indexOf(2)" name="remove-circle-outline" color="secondary" small item-end></ion-icon>
+      <ion-icon *ngIf="region.disciplines.indexOf(2)" name="remove-circle-outline" color="secondary" small item-end></ion-icon>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-grid *ngIf="regions.length == 0" class="no-data">
+    <ion-row>
+      <ion-col text-center>
+
+        <ion-icon name="map-outline"></ion-icon>
+        <h3>Geen regio's toegevoegd</h3>
+        Voeg één of meerdere regio's toe om meldingen op basis regio's te zien
+        <a [navPush]="regionAddPage">Voeg een regio toe</a>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,46 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="promptCapcode()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Capcode filters</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding-top>
+
+  <ion-list no-lines padding-top *ngIf="capcodes.length > 0">
+    <ion-item>
+      <ion-label> Gebruik deze filters</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines *ngIf="capcodes.length > 0">
+    <ion-item-divider>Ingestelde capcodes</ion-item-divider>
+    <ion-item *ngFor="let code of capcodes">
+      <ion-icon name="remove-circle-outline" color="danger" item-start></ion-icon>
+      <h2>{{code.capcode}}</h2>
+      <p>{{code.title}}</p>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-grid *ngIf="capcodes.length == 0" class="no-data">
+    <ion-row>
+      <ion-col text-center>
+
+        <ion-icon name="code-working-outline"></ion-icon>
+        <h3>Geen capcodes toegevoegd</h3>
+        Voeg één of meerdere capcodes toe om meldingen op basis capcodes te zien
+        <a (click)="promptCapcode()">Voeg een capcode toe</a>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

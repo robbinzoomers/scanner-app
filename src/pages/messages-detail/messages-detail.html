@@ -1,0 +1,59 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="reverse-camera-outline"></ion-icon>
+      </button>
+      <button ion-button icon-only>
+        <ion-icon name="map-outline"></ion-icon>
+      </button>
+      <button ion-button icon-only>
+        <ion-icon name="share-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="message_container">
+    <div class="map" style="background: #e3e3e3;">
+      <div #mapLayer id="mapLayer"></div>
+    </div>
+
+    <ion-list padding fixed no-lines [attr.track]="message.discipline | lowercase" class="title">
+      <ion-item>
+        <span class="city">{{message.city}}</span> {{message.address}}<br>
+        {{message.datetime | date:'HH:mm'}} | {{message.datetime | date:'EEEE dd MMMM'}}
+      </ion-item>
+    </ion-list>
+
+    <ion-list padding no-lines class="info">
+      <ion-item-divider sticky>Bericht</ion-item-divider>
+      <ion-item text-wrap>
+        {{message.title}}
+      </ion-item>
+
+      <ion-item-divider sticky>Oproep voor</ion-item-divider>
+      <ion-item text-wrap>
+        Ambulance 15-127 Witte Kruis
+      </ion-item>
+
+      <ion-item-divider sticky>Capcodes</ion-item-divider>
+      <ion-item text-wrap>
+        1520027
+      </ion-item>
+
+      <ion-item-divider sticky>Location</ion-item-divider>
+      <ion-item text-wrap>
+        {{message.latitude}} - {{message.longitude}}
+      </ion-item>
+
+
+    </ion-list>
+  </div>
+
+
+</ion-content>

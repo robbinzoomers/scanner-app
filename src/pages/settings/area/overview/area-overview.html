@@ -1,0 +1,46 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showAddressModal()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Area filters</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding-top>
+
+  <ion-list no-lines padding-top *ngIf="areas.length > 0">
+    <ion-item>
+      <ion-label> Gebruik deze filters</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines *ngIf="areas.length > 0">
+    <ion-item-divider>Ingestelde areas</ion-item-divider>
+    <ion-item *ngFor="let area of areas">
+      <ion-icon name="remove-circle-outline" color="danger" item-start></ion-icon>
+      <h2>{{area.place}}</h2>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-grid *ngIf="areas.length == 0" class="no-data">
+    <ion-row>
+      <ion-col text-center>
+
+        <ion-icon name="home-outline"></ion-icon>
+        <h3>Geen plaatsen toegevoegd</h3>
+        Voeg één of meerdere plaatsen toe om meldingen op basis plaatsen te zien
+        <a (click)="showAddressModal()">Voeg een plaats toe</a>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

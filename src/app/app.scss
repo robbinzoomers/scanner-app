@@ -1,0 +1,35 @@
+
+@import "../theme/variables";
+
+a { text-decoration: none; }
+
+.label { font-weight: 300;  }
+
+.vertical-align { display: flex; align-items: center; }
+
+
+.item.disabled, .icon.disabled {
+  opacity: .4;
+
+  .label { opacity: 1; }
+}
+
+
+ion-searchbar.searchbar-ios {
+  background: color($colors, light);
+}
+
+
+ion-footer {
+  .vertical-align span { padding: 0 0 0 5%; color: color($textColors, gray); }
+  .button-ios { height: 1.8em; }
+}
+
+
+.no-data {
+  color: color($textColors, lightGray);
+
+  ion-icon { font-size: 800%; color: color($textColors, gray); }
+  h3 { padding: 5% 0 10% 0; }
+  a { display: block; padding: 10% 0; text-transform: uppercase; }
+}

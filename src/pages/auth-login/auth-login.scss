@@ -1,0 +1,18 @@
+
+@import "../../app/app";
+
+page-signin {
+  .logo { width: 50%; margin: 15% 0; }
+  .bordered-right { border-right: 1px solid color($colors, primary); }
+  .content-ios hr { background-color: color($colors, primary); height: 1px; }
+  .button { color: color($textColors, default); text-transform: uppercase; }
+  .item { background: transparent; border-bottom: 1px dashed color($colors, primary) !important; padding-bottom: 15px;}
+
+  .background__primary {
+    background: color($colors, primary); color: color($textColors, white);
+
+    .bordered-right, .item { border-color: color($colors, white); }
+    .content-ios hr { background-color: color($colors, white); }
+    .button, .item { color: color($textColors, white); }
+  }
+}

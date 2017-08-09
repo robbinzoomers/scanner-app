@@ -1,0 +1,102 @@
+
+@import "../../app/app";
+
+$categories: (
+  brandweer:  color($colors, red),
+  ambulance:  color($colors, primary),
+  knrm:       color($colors, purple),
+  politie:    color($colors, blue),
+);
+
+
+page-message {
+
+  @function auxiliary-categories() {
+    @return map-remove($categories);
+  }
+
+  @each $track, $value in auxiliary-categories() {
+    .list-ios[track=#{$track}] .item {
+      border-bottom: 2px solid $value
+    }
+  }
+
+  .message_container {
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 44px;
+
+    .map {
+      height:38%;
+      position: relative;
+
+      #mapLayer { height: 100%; }
+    }
+
+    .title {
+      height: 13%;
+      position: relative;
+      margin-bottom: 1px;
+
+      .city {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: color($textColors, default);
+      }
+
+      .label-ios {
+        color: color($textColors, gray);
+      }
+    }
+
+    .info {
+      height: 43%;
+      position: fixed;
+      overflow: scroll;
+      padding-bottom: 0;
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  ion-item-divider { opacity: 0.9; }
+  ion-item-divider ion-label.label-ios {
+    color: color($textColors, gray);
+    font-weight: 600;
+  }
+  ion-item-divider ion-label.label-ios, .label-ios {
+    font-size: 1.3rem;
+  }
+
+  ion-buttons.bar-buttons-ios[end] {
+    width: 50%;
+
+    button {
+      margin-left: 10%;
+
+      &:last-child {
+        margin-right: 5%;
+      }
+    }
+  }
+
+
+
+
+
+  //agm-map {
+  //  height: 250px;
+  //}
+  //
+  //.gmnoprint a, .gmnoprint span, .gm-svpc {
+  //  display:none;
+  //}
+  //.gmnoprint div {
+  //  background:none !important;
+  //}
+  //
+  //.gm-style div:nth-child(2) {
+  //  display:none;
+  //}
+}

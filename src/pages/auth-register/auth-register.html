@@ -1,0 +1,55 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Registreer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <img class="logo" src="assets/img/scanner_icon_primary.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4><hr /></ion-col>
+      <ion-col col-4 text-center>Scanner</ion-col>
+      <ion-col col-4><hr /></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+
+        <!-- form -->
+          <form [formGroup]="signupForm" (submit)="onSignup()">
+            <ion-list no-lines>
+              <ion-item>
+                <ion-label floating>E-mailadres</ion-label>
+                <ion-input type="email" name="email" formControlName="username"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" name="password" formControlName="password" [minlength]="6"></ion-input>
+              </ion-item>
+            </ion-list>
+            <button ion-button block clear type="submit">Registreer</button>
+          </form>
+        <!-- end form -->
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><hr /></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
